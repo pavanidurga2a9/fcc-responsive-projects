@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>JavaScript Documentation</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <nav id="navbar">
+    <header>JavaScript Basics</header>
+    <a class="nav-link" href="#Introduction">Introduction</a>
+    <a class="nav-link" href="#Variables_and_Data_Types">Variables and Data Types</a>
+    <a class="nav-link" href="#Functions">Functions</a>
+    <a class="nav-link" href="#Loops">Loops</a>
+    <a class="nav-link" href="#DOM_Manipulation">DOM Manipulation</a>
+  </nav>
+
+  <main id="main-doc">
+    <section class="main-section" id="Introduction">
+      <header>Introduction</header>
+      <p>JavaScript is a versatile scripting language used to add interactivity to websites.</p>
+      <p>It runs in the browser and can manipulate the DOM dynamically.</p>
+      <p>JavaScript was initially created in 10 days by Brendan Eich in 1995.</p>
+      <p>Today, it is used in both frontend and backend (Node.js) development.</p>
+      <p>JS supports functional, object-oriented, and imperative programming styles.</p>
+      <code>console.log("Hello, JavaScript!");</code>
+    </section>
+
+    <section class="main-section" id="Variables_and_Data_Types">
+      <header>Variables and Data Types</header>
+      <p>Variables can be declared using var, let, or const.</p>
+      <p>JavaScript has several data types: string, number, boolean, null, undefined, object, and symbol.</p>
+      <p>Use let and const instead of var for block-scoped variables.</p>
+      <ul>
+        <li>String: "Hello"</li>
+        <li>Number: 42</li>
+        <li>Boolean: true/false</li>
+        <li>Object: { name: "Alice" }</li>
+        <li>Array: [1, 2, 3]</li>
+      </ul>
+      <code>let age = 25;</code>
+      <code>const name = "Pavani";</code>
+    </section>
+
+    <section class="main-section" id="Functions">
+      <header>Functions</header>
+      <p>Functions are blocks of reusable code.</p>
+      <p>They can be declared or assigned to variables (function expressions).</p>
+      <p>Arrow functions provide a shorter syntax.</p>
+      <p>Functions can accept parameters and return values.</p>
+      <code>function greet(name) { return "Hello " + name; }</code>
+      <code>const add = (a, b) => a + b;</code>
+    </section>
+
+    <section class="main-section" id="Loops">
+      <header>Loops</header>
+      <p>Loops allow repeating a block of code.</p>
+      <p>Common loops: for, while, do...while, forEach.</p>
+      <ul>
+        <li>for loop: iterate with counter</li>
+        <li>while loop: condition-based</li>
+        <li>forEach: used with arrays</li>
+        <li>break: exits loop early</li>
+        <li>continue: skips current iteration</li>
+      </ul>
+      <code>for (let i = 0; i < 5; i++) { console.log(i); }</code>
+    </section>
+
+    <section class="main-section" id="DOM_Manipulation">
+      <header>DOM Manipulation</header>
+      <p>The DOM is a tree-like structure representing the HTML content.</p>
+      <p>You can access and modify elements using JavaScript.</p>
+      <p>Methods like getElementById and querySelector are used.</p>
+      <p>Events like click and input can be handled with event listeners.</p>
+      <p>Modern frameworks like React use virtual DOM for performance.</p>
+      <code>document.getElementById("myDiv").innerText = "Updated!";</code>
+    </section>
+  </main>
+</body>
+</html>
